@@ -3,7 +3,12 @@ name = "dcc"
 version = "0.1.0"
 
 [env.windows.PATH]
-values = ["append:C:/Program Files/Side Effects Software/Houdini 20.5.654/bin"]
+values = ["append:C:/Program Files/Side Effects Software/Houdini 20.5.654/bin", "append:C:/Program Files/Nuke16.0v4"]
 
-[cmd.windows.houdini]
-values = ["houdinifx"]
+[env.windows.HOUDINI_USER_PREF_DIR]
+values = ["set:C:/Users/Deepak/Documents/houdini20.5"]
+
+[cmd.windows]
+houdini = {values = ["houdinifx"]}
+nukex16 = {values = ["Nuke16.0.exe"]}
+
