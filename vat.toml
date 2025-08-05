@@ -1,0 +1,9 @@
+[package]
+name = "dcc"
+version = "0.1.0"
+
+[env.windows.PATH]
+values = ["append:C:/Program Files/Side Effects Software/Houdini 20.5.654/bin"]
+
+[cmd.windows.houdini]
+values = ["houdinifx"]
