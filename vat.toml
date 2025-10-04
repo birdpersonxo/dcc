@@ -3,12 +3,20 @@ name = "dcc"
 version = "0.1.0"
 
 [env.windows.PATH]
-values = ["append:C:/Program Files/Side Effects Software/Houdini 20.5.654/bin", "append:C:/Program Files/Nuke16.0v4"]
+values = ["append:C:/Program Files/Side Effects Software/Houdini 21.0.440/bin",
+		"append:C:/Program Files/Nuke16.0v4",
+		"append:I:/packages/blender/fSpy-1.0.3-win",
+		"append:I:/packages/viewer/OpenRV/OpenRV_build/OpenRV_2.0.0_Win10_x64/bin",
+		"append:C:/Program Files/Blender Foundation/Blender 4.5"
+	]
 
 [env.windows.HOUDINI_USER_PREF_DIR]
-values = ["set:C:/Users/Deepak/Documents/houdini20.5"]
+values = ["set:C:/Users/deepa/Documents/houdini21.0"]
 
 [cmd.windows]
 houdini = {values = ["houdinifx"]}
-nukex16 = {values = ["Nuke16.0.exe"]}
+nukex16 = {values = ["Nuke16.0.exe --nukex"]}
+mari = {values = ["Mari7.0v2.exe"], cwd="C:/Program Files/Mari7.0v2/Bundle/bin"}
+fSpy = {values=["fSpy.exe"]}
+rv = {values=["rv.exe"]}
 
