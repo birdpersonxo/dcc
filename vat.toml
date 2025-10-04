@@ -19,4 +19,5 @@ nukex16 = {values = ["Nuke16.0.exe --nukex"]}
 mari = {values = ["Mari7.0v2.exe"], cwd="C:/Program Files/Mari7.0v2/Bundle/bin"}
 fSpy = {values=["fSpy.exe"]}
 rv = {values=["rv.exe"]}
+blender = {values = ["blender.exe"]}
 
